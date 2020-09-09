@@ -16,7 +16,7 @@ cd [file download location]
 ```
 [pip|pip3] install -r requirements.txt 
 ```
-6) Copy the two CSV files you want to merge to the folder
+6) Copy the two CSV files to be merged to the folder
 
 ## Running the script
 
@@ -24,5 +24,17 @@ cd [file download location]
 ``` 
 [python|python3] concat_csv.py -ff [first filepath] -sf [second filepath] -col [column name]
 ```
+
+## Using multiple columns
+
+When using multiple columns pass them in separated by a space.
+
+``` 
+[python|python3] concat_csv.py -ff [first filepath] -sf [second filepath] -col [col1] [col2] [colN]
+```
+
+Using the `-scol` flag the same number and order of values as specified in the `-col` flag need to be used.
+
+## Further Help
 
 For further help run `[python|python3] concat_csv.py -h`.
